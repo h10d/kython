@@ -17,5 +17,5 @@ EXPAND_ONLY_PREDEF     = YES
 
 EXTRACT_ALL = YES
 
-INPUT += doc/main.md
-USE_MDFILE_AS_MAINPAGE = main.md
+INPUT += doc/readme.md
+USE_MDFILE_AS_MAINPAGE = readme.md
