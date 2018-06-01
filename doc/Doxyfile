@@ -1,0 +1,21 @@
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME = Kython
+
+INPUT = src
+INPUT_ENCODING = UTF-8
+
+FILE_PATTERNS          = *.h \
+                         *.cpp \
+                        *.md
+
+GENERATE_LATEX = NO
+
+
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = YES
+
+EXTRACT_ALL = YES
+
+INPUT += doc/main.md
+USE_MDFILE_AS_MAINPAGE = main.md
