@@ -3,8 +3,10 @@
 
 build
 
+# generated documentation
+doc/doc
+
 # files
 
-.log
-.tmp
-
+*.log
+*.tmp
