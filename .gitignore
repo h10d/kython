@@ -1,0 +1,10 @@
+# folder
+.vscode
+
+build
+
+# files
+
+.log
+.tmp
+
