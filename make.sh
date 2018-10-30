@@ -31,7 +31,7 @@ clean() {
 build() {
     mkdir -p $BUILD_PATH
     pushd $BUILD_PATH
-    cmake -G "Unix Makefiles" ..
+    cmake -G "Unix Makefiles" -Dgtest_disable_pthreads=ON ..
     cmake --build . --target $PROJECT_NAME -- -j 8
     popd # leave build-path
 }
@@ -39,7 +39,7 @@ build() {
 test() {
     mkdir -p $BUILD_PATH
     pushd $BUILD_PATH
-    cmake -G "Unix Makefiles" ..
+    cmake -G "Unix Makefiles" -Dgtest_disable_pthreads=ON ..
     cmake --build . --target $TEST_TARGET
     ./$TEST_TARGET
     popd # leave build-path
